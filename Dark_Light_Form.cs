@@ -19,19 +19,31 @@ namespace Chess_Trainer_Tool
 
         private void button_Start_Click(object sender, EventArgs e)
         {
-            string Coordinate = boardHelper.generateRandomSquare();
-            label_Coordinate.Text = Coordinate;
-
+            label_Coordinate.Text = boardHelper.generateRandomSquare();
         }
 
         private void button_Light_Click(object sender, EventArgs e)
         {
-
+            if (boardHelper.chessBoard[label_Coordinate.Text] == 1)
+            {
+                label_Answer.Text = "Wrong!";
+            }
+            else
+            {
+                label_Answer.Text = "Correct!";
+            }
         }
 
         private void button_Dark_Click(object sender, EventArgs e)
         {
-
+            if (boardHelper.chessBoard[label_Coordinate.Text] == 0)
+            {
+                label_Answer.Text = "Wrong!";
+            }
+            else
+            {
+                label_Answer.Text = "Correct!";
+            }
         }
     }
 }

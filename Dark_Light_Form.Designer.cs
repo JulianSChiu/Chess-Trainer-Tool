@@ -47,12 +47,13 @@
             // 
             // label_Coordinate
             // 
-            this.label_Coordinate.AutoSize = true;
-            this.label_Coordinate.Location = new System.Drawing.Point(256, 157);
+            this.label_Coordinate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.label_Coordinate.Location = new System.Drawing.Point(229, 157);
             this.label_Coordinate.Name = "label_Coordinate";
-            this.label_Coordinate.Size = new System.Drawing.Size(44, 13);
+            this.label_Coordinate.Size = new System.Drawing.Size(100, 50);
             this.label_Coordinate.TabIndex = 3;
             this.label_Coordinate.Text = "Ready?";
+            this.label_Coordinate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button_Start
             // 
@@ -67,7 +68,7 @@
             // label_Answer
             // 
             this.label_Answer.AutoSize = true;
-            this.label_Answer.Location = new System.Drawing.Point(244, 333);
+            this.label_Answer.Location = new System.Drawing.Point(240, 336);
             this.label_Answer.Name = "label_Answer";
             this.label_Answer.Size = new System.Drawing.Size(68, 13);
             this.label_Answer.TabIndex = 5;
