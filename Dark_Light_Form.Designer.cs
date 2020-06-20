@@ -35,7 +35,10 @@
             this.button_Light = new System.Windows.Forms.Button();
             this.button_Dark = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox_Score = new System.Windows.Forms.GroupBox();
+            this.label_Correct = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            this.groupBox_Score.SuspendLayout();
             this.SuspendLayout();
             // 
             // label_Square
@@ -111,17 +114,39 @@
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             // 
+            // groupBox_Score
+            // 
+            this.groupBox_Score.Controls.Add(this.label_Correct);
+            this.groupBox_Score.Location = new System.Drawing.Point(529, 22);
+            this.groupBox_Score.Name = "groupBox_Score";
+            this.groupBox_Score.Size = new System.Drawing.Size(182, 363);
+            this.groupBox_Score.TabIndex = 9;
+            this.groupBox_Score.TabStop = false;
+            // 
+            // label_Correct
+            // 
+            this.label_Correct.AutoSize = true;
+            this.label_Correct.Location = new System.Drawing.Point(74, 45);
+            this.label_Correct.Name = "label_Correct";
+            this.label_Correct.Size = new System.Drawing.Size(41, 13);
+            this.label_Correct.TabIndex = 0;
+            this.label_Correct.Text = "Correct";
+            this.label_Correct.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Dark_Light_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(524, 402);
+            this.ClientSize = new System.Drawing.Size(728, 402);
+            this.Controls.Add(this.groupBox_Score);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label_Square);
             this.Controls.Add(this.button_Start);
             this.Name = "Dark_Light_Form";
             this.Text = "Guess the Color";
             this.groupBox1.ResumeLayout(false);
+            this.groupBox_Score.ResumeLayout(false);
+            this.groupBox_Score.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,6 +161,8 @@
         private System.Windows.Forms.Button button_Light;
         private System.Windows.Forms.Button button_Dark;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox_Score;
+        private System.Windows.Forms.Label label_Correct;
     }
 }
 

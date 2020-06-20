@@ -16,7 +16,7 @@ namespace Chess_Trainer_Tool
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Dark_Light_Form());
+            Application.Run(new MainMenuForm());
         }
     }
 }
