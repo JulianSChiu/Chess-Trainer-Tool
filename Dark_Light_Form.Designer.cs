@@ -37,6 +37,10 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox_Score = new System.Windows.Forms.GroupBox();
             this.label_Correct = new System.Windows.Forms.Label();
+            this.label_Wrong = new System.Windows.Forms.Label();
+            this.label_CorrectCounter = new System.Windows.Forms.Label();
+            this.label_WrongCounter = new System.Windows.Forms.Label();
+            this.button_Reset = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox_Score.SuspendLayout();
             this.SuspendLayout();
@@ -84,6 +88,7 @@
             // 
             // button_Light
             // 
+            this.button_Light.Enabled = false;
             this.button_Light.Location = new System.Drawing.Point(35, 193);
             this.button_Light.Name = "button_Light";
             this.button_Light.Size = new System.Drawing.Size(178, 47);
@@ -94,6 +99,7 @@
             // 
             // button_Dark
             // 
+            this.button_Dark.Enabled = false;
             this.button_Dark.Location = new System.Drawing.Point(268, 193);
             this.button_Dark.Name = "button_Dark";
             this.button_Dark.Size = new System.Drawing.Size(178, 47);
@@ -116,6 +122,10 @@
             // 
             // groupBox_Score
             // 
+            this.groupBox_Score.Controls.Add(this.button_Reset);
+            this.groupBox_Score.Controls.Add(this.label_WrongCounter);
+            this.groupBox_Score.Controls.Add(this.label_CorrectCounter);
+            this.groupBox_Score.Controls.Add(this.label_Wrong);
             this.groupBox_Score.Controls.Add(this.label_Correct);
             this.groupBox_Score.Location = new System.Drawing.Point(529, 22);
             this.groupBox_Score.Name = "groupBox_Score";
@@ -126,12 +136,56 @@
             // label_Correct
             // 
             this.label_Correct.AutoSize = true;
-            this.label_Correct.Location = new System.Drawing.Point(74, 45);
+            this.label_Correct.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label_Correct.Location = new System.Drawing.Point(65, 27);
             this.label_Correct.Name = "label_Correct";
-            this.label_Correct.Size = new System.Drawing.Size(41, 13);
+            this.label_Correct.Size = new System.Drawing.Size(54, 17);
             this.label_Correct.TabIndex = 0;
             this.label_Correct.Text = "Correct";
             this.label_Correct.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_Wrong
+            // 
+            this.label_Wrong.AutoSize = true;
+            this.label_Wrong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label_Wrong.Location = new System.Drawing.Point(67, 169);
+            this.label_Wrong.Name = "label_Wrong";
+            this.label_Wrong.Size = new System.Drawing.Size(50, 17);
+            this.label_Wrong.TabIndex = 1;
+            this.label_Wrong.Text = "Wrong";
+            this.label_Wrong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_CorrectCounter
+            // 
+            this.label_CorrectCounter.AutoSize = true;
+            this.label_CorrectCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_CorrectCounter.Location = new System.Drawing.Point(66, 79);
+            this.label_CorrectCounter.Name = "label_CorrectCounter";
+            this.label_CorrectCounter.Size = new System.Drawing.Size(52, 55);
+            this.label_CorrectCounter.TabIndex = 2;
+            this.label_CorrectCounter.Text = "0";
+            this.label_CorrectCounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_WrongCounter
+            // 
+            this.label_WrongCounter.AutoSize = true;
+            this.label_WrongCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_WrongCounter.Location = new System.Drawing.Point(66, 221);
+            this.label_WrongCounter.Name = "label_WrongCounter";
+            this.label_WrongCounter.Size = new System.Drawing.Size(52, 55);
+            this.label_WrongCounter.TabIndex = 3;
+            this.label_WrongCounter.Text = "0";
+            this.label_WrongCounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button_Reset
+            // 
+            this.button_Reset.Location = new System.Drawing.Point(55, 305);
+            this.button_Reset.Name = "button_Reset";
+            this.button_Reset.Size = new System.Drawing.Size(75, 23);
+            this.button_Reset.TabIndex = 4;
+            this.button_Reset.Text = "Reset";
+            this.button_Reset.UseVisualStyleBackColor = true;
+            this.button_Reset.Click += new System.EventHandler(this.button_Reset_Click);
             // 
             // Dark_Light_Form
             // 
@@ -163,6 +217,10 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox_Score;
         private System.Windows.Forms.Label label_Correct;
+        private System.Windows.Forms.Button button_Reset;
+        private System.Windows.Forms.Label label_WrongCounter;
+        private System.Windows.Forms.Label label_CorrectCounter;
+        private System.Windows.Forms.Label label_Wrong;
     }
 }
 

@@ -15,7 +15,6 @@ namespace Chess_Trainer_Tool
         public chessBoardForm()
         {
             InitializeComponent();
-
         }
         // class member array of Panels to track chessboard tiles
         private Panel[,] _chessBoardPanels;
